@@ -1,0 +1,58 @@
+         497920 function calls (490256 primitive calls) in 24.612 seconds
+
+   Ordered by: cumulative time
+   List reduced from 745 to 50 due to restriction <50>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     3144    0.057    0.000   49.266    0.016 base_events.py:1966(_run_once)
+        3    0.000    0.000   49.214   16.405 base_events.py:683(run_until_complete)
+        3    0.003    0.001   49.207   16.402 base_events.py:672(run_forever)
+     3144    0.035    0.000   47.728    0.015 selectors.py:540(select)
+     3242   22.987    0.007   47.591    0.015 {method 'control' of 'select.kqueue' objects}
+        1    0.000    0.000   24.612   24.612 profile_analyzer.py:46(run_analysis)
+        1    0.000    0.000   24.611   24.611 runners.py:169(run)
+        1    0.000    0.000   24.611   24.611 runners.py:62(__exit__)
+        1    0.000    0.000   24.611   24.611 runners.py:65(close)
+   7613/6    0.027    0.000   24.611    4.102 {method 'run' of '_contextvars.Context' objects}
+      3/1    0.000    0.000   24.604   24.604 threading.py:1029(_bootstrap)
+      3/1    0.000    0.000   24.604   24.604 threading.py:1064(_bootstrap_inner)
+      3/1    0.000    0.000   24.604   24.604 threading.py:1012(run)
+        1    0.000    0.000   24.604   24.604 base_events.py:619(_do_shutdown)
+        1    0.000    0.000   24.603   24.603 runners.py:87(run)
+     7610    0.013    0.000    1.447    0.000 events.py:92(_run)
+     4802    0.023    0.000    0.938    0.000 analyzer.py:81(bound_fetch)
+     3572    0.021    0.000    0.886    0.000 analyzer.py:14(_fetch)
+     3572    0.022    0.000    0.764    0.000 client.py:1509(__aenter__)
+     3572    0.072    0.000    0.739    0.000 client.py:486(_request)
+     3572    0.023    0.000    0.533    0.000 client.py:728(_connect_and_send_request)
+     1289    0.002    0.000    0.411    0.000 selector_events.py:965(_read_ready)
+     1289    0.011    0.000    0.408    0.000 selector_events.py:968(_read_ready__get_buffer)
+     1289    0.011    0.000    0.346    0.000 sslproto.py:438(buffer_updated)
+     1273    0.010    0.000    0.303    0.000 sslproto.py:727(_do_read)
+     1273    0.017    0.000    0.274    0.000 sslproto.py:778(_do_read__copied)
+     1250    0.032    0.000    0.239    0.000 client_reqrep.py:1410(send)
+     1250    0.003    0.000    0.179    0.000 http_writer.py:236(set_eof)
+     1250    0.004    0.000    0.176    0.000 http_writer.py:89(_write)
+     1250    0.006    0.000    0.169    0.000 sslproto.py:211(write)
+     1250    0.091    0.000    0.165    0.000 client_proto.py:291(data_received)
+     1250    0.010    0.000    0.162    0.000 sslproto.py:678(_write_appdata)
+     2500    0.032    0.000    0.158    0.000 client_reqrep.py:528(start)
+     1250    0.005    0.000    0.151    0.000 sslproto.py:702(_do_write)
+     2555    0.017    0.000    0.138    0.000 sslproto.py:718(_process_outgoing)
+     1282    0.006    0.000    0.110    0.000 selector_events.py:1051(write)
+     1285    0.104    0.000    0.104    0.000 {method 'send' of '_socket.socket' objects}
+     2500    0.007    0.000    0.099    0.000 streams.py:203(on_eof)
+     2322    0.016    0.000    0.095    0.000 connector.py:612(connect)
+     1250    0.014    0.000    0.092    0.000 client_reqrep.py:577(_response_eof)
+     2523    0.006    0.000    0.092    0.000 ssl.py:859(read)
+     2523    0.086    0.000    0.086    0.000 {method 'read' of '_ssl._SSLSocket' objects}
+     5000    0.006    0.000    0.073    0.000 client_reqrep.py:644(_release_connection)
+     1250    0.006    0.000    0.067    0.000 connector.py:220(release)
+     1250    0.008    0.000    0.059    0.000 connector.py:790(_release)
+      2/1    0.000    0.000    0.053    0.053 thread.py:81(run)
+     1250    0.021    0.000    0.049    0.000 client_reqrep.py:829(__init__)
+     3604    0.012    0.000    0.046    0.000 {method 'set_result' of '_asyncio.Future' objects}
+     1289    0.046    0.000    0.046    0.000 {method 'recv_into' of '_socket.socket' objects}
+     1250    0.006    0.000    0.045    0.000 connector.py:777(_release_acquired)
+
+

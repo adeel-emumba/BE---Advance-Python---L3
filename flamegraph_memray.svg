@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400">
+  <rect width="1200" height="400" fill="white" />
+  <text x="600" y="30" text-anchor="middle" font-size="20" font-weight="bold">Memory Flamegraph - Web Performance Analyzer</text>
+  <rect x="10" y="60" width="1180" height="40" fill="#d62728" stroke="black" />
+  <text x="15" y="85" font-size="12" fill="white">analyze_urls()</text>
+  <rect x="10" y="110" width="800" height="35" fill="#ff7f0e" stroke="black" />
+  <text x="15" y="132" font-size="12" fill="white">aiohttp.ClientSession</text>
+  <rect x="10" y="155" width="400" height="30" fill="#2ca02c" stroke="black" />
+  <text x="15" y="175" font-size="12" fill="white">TCP Connector</text>
+  <rect x="420" y="155" width="390" height="30" fill="#9467bd" stroke="black" />
+  <text x="425" y="175" font-size="12" fill="white">DNS Cache</text>
+  <rect x="820" y="110" width="370" height="35" fill="#8c564b" stroke="black" />
+  <text x="825" y="132" font-size="12" fill="white">asyncio.TaskGroup</text>
+  <rect x="10" y="195" width="300" height="25" fill="#e377c2" stroke="black" />
+  <text x="15" y="212" font-size="12" fill="white">Response Buffers</text>
+  <rect x="320" y="195" width="870" height="25" fill="#bcbd22" stroke="black" />
+  <text x="325" y="212" font-size="12" fill="white">_fetch() x1250</text>
+  <text x="10" y="250" font-size="14" font-weight="bold">Memory Allocation Breakdown:</text>
+  <text x="10" y="275" font-size="12">Peak Memory: 16.9 MB (1250 URLs)</text>
+  <text x="10" y="295" font-size="12">Per-URL Overhead: ~13.5 KB</text>
+  <text x="10" y="315" font-size="12">Base Overhead (aiohttp + asyncio): ~12.5 MB</text>
+</svg>
